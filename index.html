@@ -2,22 +2,23 @@
 <html lang="en">
 
     <head>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="portfolio">
         <meta name="author" content="Haziq Ali">
         <title>Haziq Portfolio</title>
-        
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
         <!-- Custom CSS -->
         <link href="css/stylish-portfolio.css" rel="stylesheet">
+        
+        <script src="vendor/jquery/js/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="css/parallax.min.js"></script>
+       
 
     </head>
 
@@ -46,7 +47,7 @@
         </nav>
 
         <!-- Header -->
-        <header class="masthead d-flex">
+        <header class="masthead d-flex parallax-window" data-parallax="scroll" data-image-src="img/bg-masthead.jpg">
             <div class="container-fluid text-center my-auto">
                 <div class="mb-md-4">
                     <br><br><br>
@@ -124,10 +125,10 @@
 
         <!-- Portfolio -->
         <section class="content-section text-white text-center" id="projects">
-            <div class="container-fluid">
+            <div class="container-fluid ">
                 <div class="row">
                     <h2>Here are the projects I have worked on so far!</h2><br><br>  
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: darkgrey;height: 300px">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -137,9 +138,9 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <h2>Spring Microservices</h2>
-                                <p>In this project, I was responsible for development of RESTful Web Services with the help of Spring Boot. The goal was to convert a monolithic application architecture into a microservice architecture.
-                                <p><strong>Technology:</strong> Java (J2EE), Hibernate, Spring Boot, UNIX</p>                            
+                                <h2>Spring Microservices</h2><br>
+                                <p>In this project, I was responsible for development of RESTful Web Services with the help of Spring Boot. The goal was to convert a monolithic application architecture into a microservice architecture.<br><br>
+                                <p><strong>Technology:</strong> Java (J2EE), Hibernate, Spring Boot, UNIX</p>                         
                                 <p> <strong>Tools:</strong> Eclipse, Couchbase, Putty Terminal Client, GIT, Bamboo, PCF</p>
                             </div>
                             <div class="item">
@@ -169,6 +170,7 @@
             </div>
         </section>
 
+        <!-- Perosnal Information -->
         <section class="content-section" id="contact">
             <div class="container-fluid">
                 <div class="content-section-heading text-center">
@@ -217,13 +219,14 @@
             </div>
         </section>
 
-        <footer class="footer text-center ">
+        <!-- Footer -->
+        <footer class="footer text-center">
             <div class="container-fluid">
                 <p class="text-muted small mb-0">Social media contact links</p>
                 <ul class="list-inline">
                     <li class="list-inline-item">
                         <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/haziqshowkat">
-                            <i class="icon-social-facebook"></i>
+                            <i class="icon-social-facebook" style=""></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
@@ -240,13 +243,6 @@
 
             </div>
         </footer>
-
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-            <i class="fa fa-angle-up"></i>
-        </a>
-
-
     </body>
 
 </html>

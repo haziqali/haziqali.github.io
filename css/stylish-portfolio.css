@@ -9,7 +9,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: 'Source Sans Pro'; }
+  font-family: 'Risque', cursive; }
 
 .btn-xl {
   padding: 1.25vmin 2.5vmin; }
@@ -73,7 +73,6 @@ h6 {
   height: auto;
   padding-top: 8vmin;
   padding-bottom: 8vmin;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
