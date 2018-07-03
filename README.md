@@ -1,3 +1,5 @@
+You can view the webpage produced by this repository at : https://haziqali.github.io/
+
 This repository contains the portfolio of my skillset.
 
 Clone or download the zip and simply click on index.html to view the portfolio.
